@@ -3,14 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>About US</title>
+        <title>@yield('title','Hello City')</title>
     </head>
     <body>
         @yield('content')
 
         <footer>
-        <p>&copy; Copyright {{ date('Y') }} &middot; <a href="/about">About us</p>
+        <p>&copy; Copyright {{ date('Y') }} &middot; @yield('link-about')</p>
         </footer>
     </body>
 </html>
