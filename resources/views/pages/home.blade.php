@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-<img src="/images/Quebec-flag.png" alt="Quebec flag" height="150">
+<img src="{{ asset('images/Quebec-flag.png') }}" alt="Quebec flag" height="150">
 
 <h1>Hello from Quebec!</h1>
 
