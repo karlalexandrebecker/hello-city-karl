@@ -5,5 +5,5 @@
 @section('content')
         <p>Built with &hearts; by les Teachers du NET.</p>
 
-        <p><a href="/">Revenir à l apge d'accueil</a></p>
+        <p><a href="/">Revenir à la page d'accueil</a></p>
 @endsection
