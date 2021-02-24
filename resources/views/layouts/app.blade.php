@@ -7,15 +7,12 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body class="py-6 flex flex-col justify-between items-center min-h-screen">
-        @yield('content')
+        <main role="main" class="flex flex-col justify-center items-center">
+            @yield('content')
         {{ config('app.timezone') }}
-        <footer>
-        <p class="text-gray-400">
-        &copy; Copyright {{ date('Y') }} 
-        @if(!Route::is('about'))
-        &middot; <a href="{{ route('about') }}" class="text-indigo-400 hover:text-indigo-600 underline">About us</a>
-        @endif
-        </p>
-        </footer>
+        </main>
+
+        @include('layouts.partials._footer')
+        
     </body>
 </html>

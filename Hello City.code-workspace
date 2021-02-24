@@ -4,5 +4,8 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"blade.format.enable": true,
+		"emmet.triggerExpansionOnTab": true
+	}
 }
