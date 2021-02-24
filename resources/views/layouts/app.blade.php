@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>@yield('title',config('app.name'))</title>
+        <title>{{ isset($title) ? $title . ' | ' . config('app.name') : config('app.name') }}</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body class="py-6 flex flex-col justify-between items-center min-h-screen">
@@ -13,6 +13,6 @@
         </main>
 
         @include('layouts.partials._footer')
-        
+
     </body>
 </html>
